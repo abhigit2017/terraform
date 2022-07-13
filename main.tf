@@ -3,7 +3,7 @@ provider "aws" {
     secret_key = "${var.aws_secret_key}"
     region = "${var.aws_region}"
 }
-################ VPC #################
+################ VPC creation #################
 resource "aws_vpc" "main" {
   cidr_block       = "${var.main_vpc_cidr}"
   instance_tenancy = "default"
